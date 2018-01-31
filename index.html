@@ -11,6 +11,35 @@
   		<button class="tablinks" onclick="openTab(event, 'Add Contact')">Add Contact</button>
 	</div>
  	<div id="Dialer" class="tabcontent">
+ 		<div id="wrapper">
+      <div id="phone">
+        <div id="numberDisplay">
+          <input type='tel'>
+        </div>
+        <div id="dialpad" class="button-3">
+          <ul>
+            <li class="first">1</li>
+            <li>2</li>
+            <li class="last">3</li>
+            <li class="first">4</li>
+            <li>5</li>
+            <li class="last">6</li>
+            <li class="first">7</li>
+            <li>8</li>
+            <li class="last">9</li>
+            <li class="first">*</li>
+            <li>0</li>
+            <li class="last">#</li>
+          </ul>
+        </div>
+        <div id="actions" class="button-3 deactive">
+          <ul>
+            <li href="" class="Dial">Dial</li>
+            <li href="" class="clear">Clear</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   	</div>
 
 	<div id="Contact List" class="tabcontent">
@@ -21,5 +50,7 @@
 
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  	<script src="phone.js"></script>
+ 	<script src="js/jquery.js"></script>
+    <script src="js/button-action.js"></script>
  </body>
 </html>
