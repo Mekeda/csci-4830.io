@@ -12,9 +12,6 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
-// States
-// 
-
 (function ($){
   window.numberArray = [],
   window.phoneNumber = '',
