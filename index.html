@@ -9,6 +9,7 @@
   		<button class="tablinks" onclick="openTab(event, 'Dialer')">Dialer</button>
   		<button class="tablinks" onclick="openTab(event, 'Contact List')">Contact List</button>
   		<button class="tablinks" onclick="openTab(event, 'Add Contact')">Add Contact</button>
+  		<button class="tablinks" onclick="openTab(event, 'Test Gestures')">Test Gestures</button>
 	</div>
  	<div id="Dialer" class="tabcontent">
  		<div id="wrapper">
@@ -43,9 +44,41 @@
   	</div>
 
 	<div id="Contact List" class="tabcontent">
+		<div id="contactlist" class="contact">
+          	<ul>
+            	<li class="first">Robert Drake</li>
+            	<li>Emma Frost</li>
+            	<li class="last">Doreen Green</li>
+            	<li class="first">Jean Grey</li>
+            	<li>James Howlett</li>
+            	<li class="last">Ororo Munroe</li>
+            	<li class="first">Katherine Pryde</li>
+            	<li>Piotr Rasputin</li>
+            	<li class="last">Scott Summers</li>
+            	<li class="first">Kurt Wagner</li>
+            	<li>Warren Worthing</li>
+            	<li class="last">Charles Xavier</li>
+          	</ul>
+        	</div>
  	</div>
 
 	<div id="Add Contact" class="tabcontent">
+		<div class="container">
+  		
+  			<label for="name">Name</label>
+    		<input type="text" id="name" name="name" placeholder="Jane Smith">
+
+    		<label for="phonenumber">Phone Number</label>
+    		<input type="text" id="phonenumber" name="phonenumber" placeholder="123-456-7890">
+
+    		<label for="email">Email</label>
+    		<input type="text" id="email" name="email" placeholder="jane.smith@colorado.edu">
+
+    		<input type="submit" value="Add Contact">
+		</div>
+	</div>
+
+	<div id="Test Gestures" class="tabcontent">
 	</div>
 
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
