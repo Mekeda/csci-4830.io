@@ -211,7 +211,3 @@ function openTab(evt, tabName) {
   });
 
 })(jQuery);
-
-// List Contact JS
-
-// Add Contact JS
