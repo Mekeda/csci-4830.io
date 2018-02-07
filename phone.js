@@ -45,38 +45,6 @@ function openTab(evt, tabName) {
     window.numberArray = [];
   };
 
-  function callNumber(){
-    window.numberDisplayEl.val('Calling...');
-    activateInCallInterface();
-    // Need timer interval to animate . . .
-    // Trigger  "Hangup"
-    // Trigger  "Call timer"
-  };
-
-  function holdNumber(){
-    window.numberDisplayEl.val('On Hold.');
-    changeHoldIntoUnhold();
-  };
-
-  function changeHoldIntoUnhold(){
-    window.skipButton.html('Unhold');
-    window.skipButton.addClass('ready');
-  };
-
-  function changeUnholdIntoHold(){
-    window.skipButton.html('Hold');
-  };
-
-  function activateInCallInterface(){
-    changeClearIntoHangUp();
-    changeSkipIntoHold();
-    disableCallButton();
-    disableDialButton();
-    removeReadyFromCall();
-    enableReadOnlyInput();
-    window.inCallModeActive = true;
-  };
-
   function disableInCallInterface(){
     removeReadOnlyInput();
     enableCallButton();
@@ -111,13 +79,6 @@ function openTab(evt, tabName) {
   function changeClearIntoHangUp(){
     window.clearButton.html('Hang Up');
     window.clearButton.addClass('hangup');
-  };
-
-  function changeHangUpIntoClear(){
-    if( window.clearButton.html('Hang Up') ){
-      window.clearButton.html('Clear');
-      window.clearButton.removeClass('hangup');
-    }
   };
 
   function enableReadOnlyInput(){
